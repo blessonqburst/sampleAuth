@@ -1,0 +1,175 @@
+@import '~theme/variables.scss';
+
+:global {
+  @import '~reactDateTimeStyles';
+  @import '~reactBigDateStyles';
+}
+
+.loginWrapper {
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 40%;
+
+  .loginHead {
+    background: #199ad3;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    font-family: OpenSans-Regular,Arial;
+    font-size: 18px;
+    height: 18px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .loginForm {
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    position: relative;
+    box-shadow: 1px 1px 12px 1px #BDBDBD;
+    padding-bottom: 20px;
+  }
+
+  .formContainer{
+    padding: 20px;
+  }
+
+
+  .textInput {
+    padding-top: 10px;
+    width: 100%;
+
+    label {
+      display: block;
+      font-size: 14px;
+    }
+
+    input {
+      padding: 5px 0 5px 10px;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid $grey400;
+      display: block;
+      width: 90%;
+    }
+  }
+
+
+ .errorMsg {
+    color: red;
+    position: relative;
+    padding: 5px 0;
+    top: 0;
+  }
+
+  .dropdown {
+    padding-top: 10px;
+    width: 100%;
+
+    label {
+      display: block;
+      font-size: 14px;
+    }
+
+    input {
+      padding: 5px 0 5px 10px;
+      border-radius: 3px;
+      outline: none;
+      border: 1px solid $grey400;
+      display: block;
+      width: 90%;
+    }
+
+    select {
+      width: 90%;
+      min-width: 94%;
+    }
+  }
+
+  .buttonContainer {
+    padding-top: 20px;
+
+    button {
+      background: $black;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      color: $white;
+      font-family: OpenSans-Bold,Arial;
+      font-weight: 700;
+      font-size: 14px;
+      height: 35px;
+      padding: 6px 12px;
+      min-width: 25%;
+      margin-right: 10px;
+      position: relative;
+    }
+  }
+
+  .textContainer {
+    width: 50%;
+    padding: 10px 0;
+    display: inline-block;
+
+    label {
+      font-family: OpenSans-Bold;
+      margin-bottom: 5px;
+      display: block;
+      color: #424242;
+    }
+
+    input {
+      border: 1px solid #BDBDBD;
+      font-size: 14px;
+      padding: 5px;
+      border-radius: 5px;
+      width: 90%;
+    }
+  }
+
+  .dateContainer {
+    margin: 10px 10px 10px 0;
+
+    .dateContainer {
+      display: block;
+      font-size: 14px;
+
+    }
+
+    .datepicker {
+      background-color: $white;
+
+      input {
+        padding: 5px 0 5px 10px;
+        border-radius: 5px;
+        border: 1px solid $grey400;
+        width: 90%;
+        background: transparent;
+        z-index: 1;
+        position: relative;
+      }
+      &:before {
+        position: absolute;
+        z-index: 0;
+        padding-left: 150px;
+        padding-top: 7px;
+      }
+
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+    }
+
+    input[type="number"] {
+      margin: 0 5px;
+      max-width: 50px;
+      border-radius: 7px;
+      border: 1px solid $grey450;
+      padding: 0 10px;
+    }
+  }
+}

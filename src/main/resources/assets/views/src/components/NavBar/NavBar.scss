@@ -1,0 +1,102 @@
+@import '~theme/variables.scss';
+
+.navbar {
+  background-color: $white;
+  box-shadow: 4px 3px 10px $blueGrey200;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: $zLevel5;
+  height: 50px;
+  justify-content: space-between;
+
+  &.drawerOpen {
+    left: 250px; /* For Nav Bar (fixed element) */
+    width: calc(100% - 250px);
+  }
+
+  .appDefaults {
+    display: flex;
+    align-items:center;
+
+    button {
+      background: $app-theme;
+      color: $white;
+      border: none;
+      height: 50px;
+      padding: 8px 11px;
+      font-size: 18px;
+      vertical-align: top;
+      margin-right: 10px;
+    }
+
+    .logoImage {
+      max-height: 27px;
+      margin-left: 15px;
+    }
+  }
+
+  .userNav {
+    display: flex;
+    padding-top: 5px;
+
+    button {
+      background: none;
+      color: $grey600;
+      border: none;
+      height: 40px;
+      vertical-align: top;
+      border-right: 1px solid $grey300;
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+    .user {
+      button {
+        padding: 0 15px;
+        border: none;
+        font-size: 12px;
+      }
+
+      .userIcon {
+        margin-right: 10px;
+        font-size: 25px;
+        width: 25px;
+        vertical-align: middle;
+      }
+
+      .userArrow {
+        margin-left: 10px;
+        vertical-align: top;
+        font-size: 16px;
+      }
+    }
+
+    .secondLevelMenu {
+      background-color: $white;
+      border: 1px solid $grey300;
+      border-radius: 0 0 5px 5px;
+
+      .secondLevelMenuItems {
+        display: block;
+
+        .secondLevelIcon {
+          margin-right: 5px;
+        }
+
+        button {
+          width: 100%;
+          font-size: 12px;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $mobileWidth) {
+    .userNav {
+      display: none;
+    }
+  }
+}

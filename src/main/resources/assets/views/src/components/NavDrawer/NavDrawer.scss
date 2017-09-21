@@ -1,0 +1,120 @@
+@import '~theme/variables.scss';
+
+.navDrawer {
+  width: 250px;
+  padding: 0;
+  background: $nav-bar-bg;
+  font-family: OpenSans-Regular;
+  overflow: hidden;
+
+  .homeIcon {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: -12em;
+    pointer-events: none;
+
+    i {
+      color: $app-theme-secondary;
+      opacity: 0.6;
+      font-size: 33em;
+      position: relative;
+      bottom: -0.3em;
+      right: -0.1em;
+    }
+  }
+
+  .userInfo {
+    display: flex;
+    color: $white;
+    background: $nav-bar-theme;
+    height: 75px;
+    padding: 5px;
+
+    .userIcon {
+      width: 50px;
+      height: 50px;
+      font-size: 50px;
+      padding: 5px;
+    }
+
+    .userDetails {
+      padding: 10px;
+
+      .username {
+        font-size: 16px;
+        font-family: OpenSans-bold;
+        padding: 0 5px;
+
+        .userAct {
+          vertical-align: top;
+          margin-left: 10px;
+        }
+      }
+
+      .userrole {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $blueGrey200;
+        padding: 0 5px;
+      }
+
+      .logout {
+        button {
+          border: none;
+          background: none;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .menuItems {
+    color: $white;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $nav-bar-hover;
+    }
+
+    &.active {
+      border-left: 5px solid $app-theme-secondary;
+      background-color: $nav-highlight;
+      padding-left: 10px;
+
+      .directional {
+        padding-top: 5px;
+      }
+    }
+
+    &.secondLevel {
+      background: $app-theme;
+      margin-left: 25px;
+      display: block;
+
+      &.active {
+        border-left: 5px solid $nav-bar-theme;
+      }
+
+      &:hover {
+        background-color: $nav-bar-hover;
+      }
+      .menuIcons {
+        font-weight: bold;
+      }
+    }
+
+    .menuIcons {
+      margin-right: 10px;
+    }
+  }
+
+  > :last-child {
+    border-bottom: 0px solid $app-theme-secondary;
+  }
+}

@@ -1,0 +1,86 @@
+@import '~theme/variables';
+
+.userContainer {
+  background: $white;
+  height: 100%;
+
+  .pageHead {
+    @extend %pageHeadTemplate;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .editClient{
+      @extend %headRightContent;
+    }
+  }
+  .container {
+    background-color: $white;
+    border: 1px solid $app-theme-secondary;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 2px $app-theme-secondary;
+
+    .labelContainer {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .infoContainer {
+      display: flex;
+    }
+  }
+
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .left {
+    margin-left: 8%;
+    flex-basis: 30%;
+
+    .imageField {
+      margin-top: 45px;
+      padding-bottom: 25px;
+      padding-left: 8%;
+
+      .userIcon {
+        font-size: 180px;
+        width: 90px;
+        color: #28a43e;
+      }
+    }
+
+    .actionItems {
+      display: block;
+      margin: 15%;
+    }
+  }
+  .right {
+    margin-top: 4%;
+    flex-basis: 70%;
+    width: 100%;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+
+      .textInput {
+        margin: 25px 25px 25px 0;
+        flex-basis: 50%;
+        display: flex;
+        justify-content: space-between;
+
+        label {
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+        input {
+          border: none;
+        }
+      }
+    }
+  }
+}

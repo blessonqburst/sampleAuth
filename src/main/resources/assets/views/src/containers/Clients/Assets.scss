@@ -1,0 +1,105 @@
+@import '~theme/variables';
+
+.assetContainer {
+  padding: 20px;
+
+  .pageHead {
+    @extend %pageHeadTemplate;
+  }
+
+  .cardHeader {
+    border-bottom: 1px solid $app-theme-secondary;
+    text-transform: capitalize;
+  }
+
+  .cardAssets{
+    width: calc(100% - 100px);
+    overflow: auto;
+  }
+
+  .link {
+    color: $black;
+  }
+
+  .editLink{
+    color: $black;
+    text-align: center;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
+
+.updateContainer {
+  padding: 20px;
+
+  .pageHead {
+    @extend %pageHeadTemplate;
+  }
+
+  .formContainer {
+    background: $white;
+    padding: 15px;
+    margin-top: 10px;
+
+    .textContainer {
+      width: 50%;
+      padding: 10px 0;
+      display: inline-block;
+
+      label {
+        font-family: OpenSans-Bold;
+        margin-bottom: 5px;
+        display: block;
+        color: #424242;
+      }
+
+      input {
+        border: 1px solid #BDBDBD;
+        font-size: 14px;
+        padding: 5px;
+        border-radius: 5px;
+        width: 90%;
+      }
+    }
+
+    .selectContainer {
+      display: inline-block;
+      width: 50%;
+
+      select {
+        min-width: 92%;
+      }
+    }
+
+    .buttonContainer {
+      text-align: center;
+
+      .button {
+        button {
+          background: $brand-primary;
+          margin: 15px;
+          color: $white;
+          outline: none;
+          border: none;
+          border-radius: 3px;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+
+      .cancel {
+        button {
+          background: $brand-danger !important;
+        }
+      }
+
+      .delete {
+        button {
+          background: $brand-warning !important;
+        }
+      }
+    }
+  }
+}

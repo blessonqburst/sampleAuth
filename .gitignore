@@ -1,0 +1,33 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+.gitattributes
+
+.classpath
+.project
+.settings
+*.iml
+dependency-reduced-pom.xml
+
+build
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Swap
+*.sw*
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+.idea/
+.vscode/
+dist/
+build/
+target/
+
+# Files or folders to ignore in views project
+/src/main/resources/assets/views/node_modules/

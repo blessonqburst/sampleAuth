@@ -1,0 +1,53 @@
+.loginWrapper {
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 15%;
+  width: 400px;
+
+  .loginHead {
+    background: #199ad3;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    font-family: OpenSans-Regular,Arial;
+    font-size: 24px;
+    height: 28px;
+    text-align: center;
+    padding: 18px;
+  }
+
+  .loginForm {
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    position: relative;
+    box-shadow: 0 3px 4px grey;
+    padding-bottom: 15px;
+
+    .inputWrapper {
+      margin: 25px 45px 15px 45px;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+      .inputField {
+        margin-bottom: 10px;
+        text-align: center;
+        border-radius: 3px;
+        border: 1px solid #dfdfdf;
+        padding: 5px;
+      }
+    }
+
+    .buttonWrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .linkWrapper {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 45px 0 45px;
+    }
+  }
+}

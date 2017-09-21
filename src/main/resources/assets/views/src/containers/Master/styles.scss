@@ -1,0 +1,29 @@
+.masterContainer {
+  .navBar {
+    background-color: #fff;
+    box-shadow: 0 2px 10px #9a9a9a;
+    display: flex;
+    padding: 10px 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+
+    .logo {
+      vertical-align: middle;
+      border: 0;
+      max-height: 35px;
+    }
+  }
+
+  .footerContent {
+    width: 100%;
+    text-align: center;
+    background: #dfdfdf;
+    padding: 10px 0;
+    z-index: 4;
+    box-shadow: 0 0 5px 0 #fff;
+    position: fixed;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,40 @@
+@import '~theme/variables';
+
+.carousel {
+  text-align: center;
+  min-height: 100px;
+
+  i {
+    position: absolute;
+    padding: 20px 10px;
+    background: $grey200;
+    bottom: 49%;
+    z-index: 5;
+    cursor: pointer;
+
+    &.left {
+      left: 0;
+    }
+
+    &.right {
+      right: 0
+    }
+  }
+
+  .image {
+    max-height: 80vh;
+    outline: none;
+    opacity: 0;
+
+    &.active {
+      opacity: 1;
+      position: relative;
+      transition: opacity 1s ease;
+    }
+
+    &.outside {
+      left: 0px;
+      position: absolute;
+    }
+  }
+}

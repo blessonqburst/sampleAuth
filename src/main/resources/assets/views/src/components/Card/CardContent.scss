@@ -1,0 +1,15 @@
+@import '~theme/variables';
+
+.cardContent {
+  flex: 0.9;
+  display: flex;
+  flex-direction: row;
+
+  .rightContent,
+  .leftContent {
+    flex: 0.5;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

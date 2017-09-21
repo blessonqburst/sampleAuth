@@ -1,0 +1,186 @@
+@import '~theme/variables';
+
+.userContainer {
+  background: $white;
+  height: 100%;
+
+  .pageHead {
+    @extend %pageHeadTemplate;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .registerClient{
+      @extend %headRightContent;
+    }
+  }
+
+  .link {
+    color: $black;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  .clipBoard {
+    border: #fff;
+    padding-right: 10px;
+  }
+
+  .clipBoardButton {
+    padding-left: 15px;
+    color: $red;
+  }
+
+}
+
+.updateContainer {
+  padding: 20px;
+
+  .pageHead {
+    @extend %pageHeadTemplate;
+  }
+
+  .formContainer {
+    background: $white;
+    padding: 15px;
+    margin-top: 10px;
+
+    .textContainer {
+      width: 50%;
+      padding: 10px 0;
+      display: inline-block;
+
+      input {
+        width: 90%;
+        display: block;
+        border: 1px solid $app-theme-secondary;
+        font-size: 14px;
+        padding: 2px;
+      }
+    }
+
+    .buttonContainer {
+      text-align: center;
+
+      .button {
+        button {
+          background: $brand-primary;
+          margin: 15px;
+          color: $white;
+          outline: none;
+          border: none;
+          border-radius: 3px;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+
+      .cancel {
+        button {
+          background: $brand-danger !important;
+        }
+      }
+
+      .delete {
+        button {
+          background: $brand-warning !important;
+        }
+      }
+    }
+  }
+}
+
+.loginWrapper {
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 40%;
+
+  .loginHead {
+    background: #199ad3;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    font-family: OpenSans-Regular,Arial;
+    font-size: 18px;
+    height: 18px;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .loginForm {
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    position: relative;
+    box-shadow: 1px 1px 12px 1px #BDBDBD;
+    padding-bottom: 20px;
+  }
+
+  .formContainer{
+    padding: 20px;
+  }
+
+
+  .textInput {
+    padding-top: 10px;
+    width: 100%;
+
+    label {
+      display: block;
+      font-size: 14px;
+    }
+
+    input {
+      padding: 5px 0 5px 10px;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid $grey400;
+      display: block;
+      width: 90%;
+    }
+  }
+
+  .buttonContainer {
+    padding-top: 20px;
+
+    button {
+      background: $black;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      color: $white;
+      font-family: OpenSans-Bold,Arial;
+      font-weight: 700;
+      font-size: 14px;
+      height: 35px;
+      padding: 6px 12px;
+      min-width: 25%;
+      margin-right: 10px;
+      position: relative;
+    }
+  }
+
+  .textContainer {
+    width: 50%;
+    padding: 10px 0;
+    display: inline-block;
+
+    label {
+      font-family: OpenSans-Bold;
+      margin-bottom: 5px;
+      display: block;
+      color: #424242;
+    }
+
+    input {
+      border: 1px solid #BDBDBD;
+      font-size: 14px;
+      padding: 5px;
+      border-radius: 5px;
+      width: 90%;
+    }
+  }
+}

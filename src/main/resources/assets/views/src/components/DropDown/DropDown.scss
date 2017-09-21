@@ -1,0 +1,28 @@
+@import '~theme/colors';
+
+.ddContainer {
+  label {
+    font-family: OpenSans-Bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: $grey800;
+  }
+
+  .dropDown {
+    background: transparent;
+    border: 1px solid $grey400;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px;
+    height: 30px;
+    min-width: 100%;
+  }
+
+  .required {
+    color: red;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

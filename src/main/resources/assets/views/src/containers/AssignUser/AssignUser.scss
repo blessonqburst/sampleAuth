@@ -1,0 +1,161 @@
+@import '~theme/variables';
+
+.assetContainer {
+  background: $white;
+  height: 100%;
+
+  .pageHead {
+    @extend %pageHeadTemplate;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .formContainer {
+    background-color: $white;
+    border: 0 solid $app-theme-secondary;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 2px $app-theme-secondary;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+
+    .formHead {
+      display: flex;
+      align-items: center;
+
+      .assignClient {
+        align-self: center;
+        @extend %headRightContent;
+        margin: 0 0 0 50%;
+        padding: 2px 7px;
+      }
+
+      .dropDown {
+        font-weight: bold;
+        border-color: $white;
+        display: flex;
+        width: 25%;
+
+        label {
+          align-self: center;
+        }
+
+        select {
+          margin-left: 15%;
+        }
+
+      }
+    }
+
+    .Nolabel {
+      text-align: center;
+
+      label {
+        font-weight: bold;
+      }
+    }
+
+  }
+
+  .link {
+    color: $black;
+  }
+
+  .editLink{
+    color: $black;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
+
+.assignContainer {
+  background: $grey200;
+
+  .pageHead {
+    @extend %pageHeadTemplate;
+  }
+
+  .assignAction {
+    @extend %assignActionTemplate;
+    button {
+      color: $white;
+    }
+
+    .submitButton {
+      button {
+        background: $app-theme;
+      }
+    }
+  }
+}
+
+.assignContainer {
+  font-family: OpenSans-Regular;
+  font-size: 14px;
+
+  .formContainer {
+    padding: 20px;
+    background-color: $white;
+    box-shadow: 0px -1px 1px $grey450;
+
+    .errContainer {
+      color: $red900;
+      margin: 0 40px;
+    }
+
+    .majorFormControl {
+      display: flex;
+      margin: 30px 40px;
+
+      .ddContainer {
+        flex-grow: 1;
+        padding-right: 20px;
+        width: 50%;
+
+        label {
+          font-weight: bold;
+        }
+
+        select {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .splitLine {
+    box-shadow: 0 0 1px $grey450;
+    border: 0;
+    border-top: 1px solid $grey200;
+    margin: 0 20px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .uploader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      outline: none;
+    }
+
+    button {
+      @extend %buttonTemplate;
+    }
+  }
+
+  .warning {
+    button {
+      background: $brand-primary;
+    }
+  }
+
+}

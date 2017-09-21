@@ -1,0 +1,10 @@
+@import '~theme/variables';
+
+.cardMenu {
+  display: flex;
+  flex: 0.1;
+  border-top: 1px solid $app-theme-secondary;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+}

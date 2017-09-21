@@ -1,0 +1,31 @@
+@import '~theme/variables';
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    box-sizing: border-box;
+    width: 33.33333333%;
+  }
+
+  .noTopMargin {
+    margin-top: 0px;
+  }
+
+  .twoItems {
+    width: 50%;
+  }
+}
+
+@media(max-width:991px) {
+  .cardContainer .item {
+    width: 50%;
+  }
+}
+
+@media(max-width:767px) {
+  .cardContainer .item {
+    width: 100%;
+  }
+}

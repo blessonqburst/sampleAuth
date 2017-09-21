@@ -1,0 +1,74 @@
+@import '~theme/colors';
+
+.tabs {
+  display:block;  
+  font-family: OpenSans-Regular;
+
+  .tabHead {
+    display: flex;
+    width: 100%;
+    height: 41px;
+    padding: 0 20px;
+    font-size: 14px;
+
+    .tabHeadItem {
+      padding: 10px;
+      min-width: 100px;
+      border: 1px solid $grey300;
+      border-bottom: 0;
+      color: $greyCool400;
+      height: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &.active {
+        background-color: $white;
+        border: 0;
+        border-bottom: 1px solid $white;
+        color: $black;
+        font-family: OpenSans-Bold;
+      }
+    }
+  }
+
+  .tabContent {
+    padding: 20px;
+    background-color: $white;
+    box-shadow: 0px -1px 1px $grey450;
+  }
+}
+
+.item {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.full {
+  width: 100%;
+}
+
+
+.bar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $white;
+  display: table;
+  border: 1px solid $grey450;
+}
+
+.tabs {
+
+  a {
+    padding: 7px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    border: 1px solid $grey450;
+
+    &:focus {
+      border-bottom: 0;
+    }
+  }
+}
